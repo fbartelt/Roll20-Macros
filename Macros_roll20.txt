@@ -1,0 +1,108 @@
+
+### Pedágio aos Mortos
+&{template:dmg} {{rname= Pedágio aos Mortos}} {{range= 18 m}} {{damage= 1}} {{dmg1flag=1}} {{dmg1=[[[[round((@{Zikko Bruhnog|level} + 1) / 6 + 0.5)]]d[[?{Toll the Dead|Normal,8|Levou Dano,12}]]]]}} {{dmg1type= Necrótico}} {{dmg2flag=}} {{dmg2=}} {{dmg2type=}} {{crit=}} {{crit1=crit1}} {{crit2=crit2}} {{save=1}} {{saveattr= Sabedoria}} {{savedesc=}} {{savedc=[[[[(@{Zikko Bruhnog|spell_save_dc})]][CD]]]}} {{desc=}} {{hldmg=hldmg}} {{spelllevel=cantrip}} ammo=ammo {{charname=}}
+
+### Mordida do Adran
+&{template:atkdmg} {{mod=[[@{Adran Therem|strength_mod}[STR] + @{Adran Therem|pb}[PROF]]]}} {{rname=Mordida Vampírica}} {{r1=[[@{Adran Therem|d20}cs>20 + @{Adran Therem|strength_mod}[STR] + @{Adran Therem|pb}[PROF]]]}} {{always=1}} {{r2=[[@{Adran Therem|d20}cs>20 + @{Adran Therem|strength_mod}[STR] + @{Adran Therem|pb}[PROF]]]}} {{attack=1}} {{range= Toque}} {{damage=1}} {{dmg1flag=1}} {{dmg1=[[1d6+@{Adran Therem|strength_mod}[STR]]]}} {{dmg1type=Necrótico}} {{dmg2flag=}} {{dmg2=[[1d6]]}} {{dmg2type=Necrótico}} {{crit1=[[1d6]]}} {{crit2=[[1d6]]}} {{save=}} {{saveattr=saveattr}} {{savedesc=savedesc}} {{savedc=savedc}} {{desc=}} {{hldmg=hldmg}} {{spelllevel=spelllevel}} ammo= {{charname=}}
+
+
+##################### GERAIS #####################
+
+### d20+bonus
+&{template:default} {{name=1d20 + bônus 🎲}} {{=**=** [[1d20+?{bônus|0}]]}}
+
+### XdY+bonus
+&{template:default} {{name=XdY + bônus 🎲}} {{=**=** [[[[?{número de dados|0}]]d[[?{tipo do dado|0}]]+?{bônus|0}]]}}
+
+### texto
+&{template:desc} {{desc=?{desc|昨日すき焼きを食べました }}}
+
+### Imagem
+[Image](?{URL}#.png)
+
+### Atributos
+/me ?{Vantagem|
+Normal, ?{Selecione o Atributo&#124;
+          Força&#44;obteve [[1d20+@{strength_save_bonus}]] no teste de Força!&#124;
+          Destreza&#44;obteve [[1d20+@{dexterity_save_bonus}]] no teste de Destreza!&#124;
+          Constituição&#44;obteve [[1d20+@{constitution_save_bonus}]] no teste de Constituição!&#124;
+          Inteligência&#44;obteve [[1d20+@{intelligence_save_bonus}]] no teste de Inteligência!&#124;
+          Sabedoria&#44;obteve [[1d20+@{wisdom_save_bonus}]] no teste de Sabedoria!&#124;
+          Carisma&#44;obteve [[1d20+@{charisma_save_bonus}]] no teste de Carisma!&#125;|
+Desvantagem,?{Selecione o Atributo&#124; 
+              Força&#44;obteve [[2d20kl1+@{strength_save_bonus}]] no teste de Força com Desvantagem!&#124; 
+              Destreza&#44;obteve [[2d20kl1+@{dexterity_save_bonus}]] no teste de Destreza com Desvantagem!&#124; 
+              Constituição&#44;obteve [[2d20kl1+@{constitution_save_bonus}]] no teste de Constituição com Desvantagem!&#124; 
+              Inteligência&#44;obteve [[2d20kl1+@{intelligence_save_bonus}]] no teste de Inteligência com Desvantagem!&#124; 
+              Sabedoria&#44;obteve [[2d20kl1+@{wisdom_save_bonus}]] no teste de Sabedoria com Desvantagem!&#124; 
+              Carisma&#44;obteve [[2d20kl1+@{charisma_save_bonus}]] no teste de Carisma com Desvantagem!&#125;|
+Vantagem,?{Selecione o Atributo&#124;
+            Força&#44;obteve [[2d20kh1+@{strength_save_bonus}]] no teste de Força com Vantagem!&#124; 
+            Destreza&#44;obteve [[2d20kh1+@{dexterity_save_bonus}]] no teste de Destreza com Vantagem!&#124; 
+            Constituição&#44;obteve [[2d20kh1+@{constitution_save_bonus}]] no teste de Constituição com Vantagem!&#124; 
+            Inteligência&#44;obteve [[2d20kh1+@{intelligence_save_bonus}]] no teste de Inteligência com Vantagem!&#124; 
+            Sabedoria&#44;obteve [[2d20kh1+@{wisdom_save_bonus}]] no teste de Sabedoriacom Vantagem!&#124; 
+            Carisma&#44;obteve [[2d20kh1+@{charisma_save_bonus}]] no teste de Carisma com Vantagem!&#125;
+            }
+
+
+### Perícias 
+/me ?{Vantagem|
+Normal, ?{Selecione a Perícia&#124;
+Acrobacia&#44;obteve [[1d20+@{acrobatics_bonus}]] no teste de Acrobacia!&#124;
+Arcanismo&#44;obteve [[1d20+@{arcana_bonus}]] no teste de Arcanismo!&#124;
+Atletismo&#44;obteve [[1d20+@{athletics_bonus}]] no teste de Atletismo!&#124;
+Atuação&#44;obteve [[1d20+@{performance_bonus}]] no teste de Atuação!&#124;
+Blefar&#44;obteve [[1d20+@{deception_bonus}]] no Blefe!&#124;
+Furtividade&#44;obteve [[1d20+@{stealth_bonus}]] no teste de Furtividade!&#124;
+História&#44;obteve [[1d20+@{history_bonus}]] no teste de História!&#124;
+Intimidação&#44;obteve [[1d20+@{intimidation_bonus}]] no teste de Intimidação!&#124;
+Intuição&#44;obteve [[1d20+@{insight_bonus}]] no teste de Intuição!&#124;
+Investigação&#44;obteve [[1d20+@{investigation_bonus}]] no teste de Investigação!&#124;
+Lidar Com Animais&#44;obteve [[1d20+@{animal_handling_bonus}]] no teste de Lidar com Animais!&#124;
+Medicina&#44;obteve [[1d20+@{medicine_bonus}]] no teste de Medicina!&#124;
+Natureza&#44;obteve [[1d20+@{nature_bonus}]] no teste de Natureza!&#124;
+Percepção&#44;obteve [[1d20+@{perception_bonus}]] no teste de Percepção!&#124;
+Persuasão&#44;obteve [[1d20+@{persuasion_bonus}]] no teste de Persuasão!&#124;
+Prestigiditação&#44;obteve [[1d20+@{sleight_of_hand_bonus}]] no teste de Prestidigitação!&#124;
+Religião&#44;obteve [[1d20+@{religion_bonus}]] no teste de Religião!&#124;
+Sobrevivência&#44;obteve [[1d20+@{survival_bonus}]] no teste de Sobrevivência!&#125;|
+Desvantagem,?{Selecione o Atributo&#124; 
+Acrobacia&#44;obteve [[2d20kl1+@{acrobatics_bonus}]] no teste de Acrobacia com Desvantagem!&#124;
+Arcanismo&#44;obteve [[2d20kl1+@{arcana_bonus}]] no teste de Arcanismo com Desvantagem!&#124;
+Atletismo&#44;obteve [[2d20kl1+@{athletics_bonus}]] no teste de Atletismo com Desvantagem!&#124;
+Atuação&#44;obteve [[2d20kl1+@{performance_bonus}]] no teste de Atuação com Desvantagem!&#124;
+Blefar&#44;obteve [[2d20kl1+@{deception_bonus}]] no Blefe com Desvantagem!&#124;
+Furtividade&#44;obteve [[2d20kl1+@{stealth_bonus}]] no teste de Furtividade com Desvantagem!&#124;
+História&#44;obteve [[2d20kl1+@{history_bonus}]] no teste de História com Desvantagem!&#124;
+Intimidação&#44;obteve [[2d20kl1+@{intimidation_bonus}]] no teste de Intimidação com Desvantagem!&#124;
+Intuição&#44;obteve [[2d20kl1+@{insight_bonus}]] no teste de Intuição com Desvantagem!&#124;
+Investigação&#44;obteve [[2d20kl1+@{investigation_bonus}]] no teste de Investigação com Desvantagem!&#124; 
+Lidar Com Animais&#44;obteve [[2d20kl1+@{animal_handling_bonus}]] no teste de Lidar com Animais com Desvantagem!&#124;
+Medicina&#44;obteve [[2d20kl1+@{medicine_bonus}]] no teste de Medicina com Desvantagem!&#124;
+Natureza&#44;obteve [[2d20kl1+@{nature_bonus}]] no teste de Natureza  com Desvantagem!&#124;
+Percepção&#44;obteve [[2d20kl1+@{perception_bonus}]] no teste de Percepção com Desvantagem!&#124;
+Persuasão&#44;obteve [[2d20kl1+@{persuasion_bonus}]] no teste de Persuasão com Desvantagem!&#124;
+Prestigiditação&#44;obteve [[2d20kl1+@{sleight_of_hand_bonus}]] no teste de Prestidigitação com Desvantagem!&#124;
+Religião&#44;obteve [[2d20kl1+@{religion_bonus}]] no teste de Religião com Desvantagem!&#124;
+Sobrevivência&#44;obteve [[2d20kl1+@{survival_bonus}]] no teste de Sobrevivência com Desvantagem!&#125;|
+Vantagem,?{Selecione o Atributo&#124;
+Acrobacia&#44;obteve [[2d20kh1+@{acrobatics_bonus}]] no teste de Acrobacia com Vantagem!&#124;
+Arcanismo&#44;obteve [[2d20kh1+@{arcana_bonus}]] no teste de Arcanismo com Vantagem!&#124;
+Atletismo&#44;obteve [[2d20kh1+@{athletics_bonus}]] no teste de Atletismo com Vantagem!&#124;
+Atuação&#44;obteve [[2d20kh1+@{performance_bonus}]] no teste de Atuação com Vantagem!&#124;
+Blefar&#44;obteve [[2d20kh1+@{deception_bonus}]] no Blefe com Vantagem!&#124;
+Furtividade&#44;obteve [[2d20kh1+@{stealth_bonus}]] no teste de Furtividade com Vantagem!&#124;
+História&#44;obteve [[2d20kh1+@{history_bonus}]] no teste de História com Vantagem!&#124;
+Intimidação&#44;obteve [[2d20kh1+@{intimidation_bonus}]] no teste de Intimidação com Vantagem!&#124;
+Intuição&#44;obteve [[2d20kh1+@{insight_bonus}]] no teste de Intuição com Vantagem!&#124;
+Investigação&#44;obteve [[2d20kh1+@{investigation_bonus}]] no teste de Investigação com Vantagem!&#124;
+Lidar Com Animais&#44;obteve [[2d20kh1+@{animal_handling_bonus}]] no teste de Lidar com Animais com Vantagem!&#124;
+Medicina&#44;obteve [[2d20kh1+@{medicine_bonus}]] no teste de Medicina com Vantagem!&#124;
+Natureza&#44;obteve [[2d20kh1+@{nature_bonus}]] no teste de Natureza com Vantagem!&#124;
+Percepção&#44;obteve [[2d20kh1+@{perception_bonus}]] no teste de Percepção com Vantagem!&#124;
+Persuasão&#44;obteve [[2d20kh1+@{persuasion_bonus}]] no teste de Persuasão com Vantagem!&#124;
+Prestigiditação&#44;obteve [[2d20kh1+@{sleight_of_hand_bonus}]] no teste de Prestidigitação com Vantagem!&#124;
+Religião&#44;obteve [[2d20kh1+@{religion_bonus}]] no teste de Religião com Vantagem!&#124;
+Sobrevivência&#44;obteve [[2d20kh1+@{survival_bonus}]] no teste de Sobrevivência com Vantagem!&#125;
+            }
