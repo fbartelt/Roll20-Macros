@@ -2,7 +2,7 @@ Descrição
 =================
 Alguns macros úteis para o Roll20 desenvolvidos para agilizar o jogo, diminuir o espaço gasto no chat para rolagem de dados e padronizar as ações dos personagens.
 
-A lista dos macros inclusos no Macros_roll20.txt podem ser vistos na [lista de macros](#lista-de-macros) no final do README
+A lista dos macros inclusos no diretório /macros/ podem ser vistos na [lista de macros](#lista-de-macros) no final do README
 
 Guia para iniciantes
 =================
