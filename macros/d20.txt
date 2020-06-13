@@ -1,0 +1,1 @@
+&{template:default} {{name=1d20 + bônus 🎲}} {{=**=** [[1d20+?{bônus|0}]]}}

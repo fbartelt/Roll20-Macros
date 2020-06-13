@@ -1,0 +1,5 @@
+### texto
+&{template:desc} {{desc=?{desc|昨日すき焼きを食べました }}}
+
+### Imagem
+[Image](?{URL}#.png)
