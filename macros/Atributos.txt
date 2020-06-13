@@ -1,0 +1,23 @@
+/me ?{Vantagem|
+Normal, ?{Selecione o Atributo&#124;
+          Força&#44;obteve [[1d20+@{strength_save_bonus}]] no teste de Força!&#124;
+          Destreza&#44;obteve [[1d20+@{dexterity_save_bonus}]] no teste de Destreza!&#124;
+          Constituição&#44;obteve [[1d20+@{constitution_save_bonus}]] no teste de Constituição!&#124;
+          Inteligência&#44;obteve [[1d20+@{intelligence_save_bonus}]] no teste de Inteligência!&#124;
+          Sabedoria&#44;obteve [[1d20+@{wisdom_save_bonus}]] no teste de Sabedoria!&#124;
+          Carisma&#44;obteve [[1d20+@{charisma_save_bonus}]] no teste de Carisma!&#125;|
+Desvantagem,?{Selecione o Atributo&#124; 
+              Força&#44;obteve [[2d20kl1+@{strength_save_bonus}]] no teste de Força com Desvantagem!&#124; 
+              Destreza&#44;obteve [[2d20kl1+@{dexterity_save_bonus}]] no teste de Destreza com Desvantagem!&#124; 
+              Constituição&#44;obteve [[2d20kl1+@{constitution_save_bonus}]] no teste de Constituição com Desvantagem!&#124; 
+              Inteligência&#44;obteve [[2d20kl1+@{intelligence_save_bonus}]] no teste de Inteligência com Desvantagem!&#124; 
+              Sabedoria&#44;obteve [[2d20kl1+@{wisdom_save_bonus}]] no teste de Sabedoria com Desvantagem!&#124; 
+              Carisma&#44;obteve [[2d20kl1+@{charisma_save_bonus}]] no teste de Carisma com Desvantagem!&#125;|
+Vantagem,?{Selecione o Atributo&#124;
+            Força&#44;obteve [[2d20kh1+@{strength_save_bonus}]] no teste de Força com Vantagem!&#124; 
+            Destreza&#44;obteve [[2d20kh1+@{dexterity_save_bonus}]] no teste de Destreza com Vantagem!&#124; 
+            Constituição&#44;obteve [[2d20kh1+@{constitution_save_bonus}]] no teste de Constituição com Vantagem!&#124; 
+            Inteligência&#44;obteve [[2d20kh1+@{intelligence_save_bonus}]] no teste de Inteligência com Vantagem!&#124; 
+            Sabedoria&#44;obteve [[2d20kh1+@{wisdom_save_bonus}]] no teste de Sabedoriacom Vantagem!&#124; 
+            Carisma&#44;obteve [[2d20kh1+@{charisma_save_bonus}]] no teste de Carisma com Vantagem!&#125;
+            }

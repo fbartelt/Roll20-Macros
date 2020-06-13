@@ -1,0 +1,1 @@
+&{template:default} {{name=XdY + bônus 🎲}} {{=**=** [[[[?{número de dados|0}]]d[[?{tipo do dado|0}]]+?{bônus|0}]]}}
