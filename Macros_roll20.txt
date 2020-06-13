@@ -45,7 +45,6 @@ Vantagem,?{Selecione o Atributo&#124;
             Carisma&#44;obteve [[2d20kh1+@{charisma_save_bonus}]] no teste de Carisma com Vantagem!&#125;
             }
 
-
 ### Perícias 
 /me ?{Vantagem|
 Normal, ?{Selecione a Perícia&#124;
